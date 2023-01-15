@@ -10,6 +10,10 @@
     color: #3a3a3a;
 }
 
+a{
+    text-decoration: none;
+}
+
 html {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -48,7 +52,6 @@ body{
 }
 
 .main-header .header-nav a{
-    text-decoration: none;
     font-weight: 500;
     line-height: 24px;
 }
@@ -80,7 +83,6 @@ body{
 }
 
 .banner-section .banner-text a{
-    text-decoration: none;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #3a3a3a;
 }
@@ -119,7 +121,6 @@ body{
 .best-item .best-item-text a{
     font-weight: 600;
     font-size: 1.3rem;
-    text-decoration: none;
     padding-bottom: 0.3rem;
     border-bottom: 1px solid #3a3a3a;
 }
@@ -141,8 +142,8 @@ body{
 
 .top-pics .top-pics-text h2{
     letter-spacing: 1px;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 500;
 }
 
 .top-pics .top-pics-text p{
@@ -185,7 +186,6 @@ body{
 }
 
 .top-pics .top-pics-link a{
-    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500;
     border-bottom: 2px solid;
@@ -230,9 +230,118 @@ body{
     display: inline-block;
     font-size: 2rem;
     margin-top: 1rem;
-    text-decoration: none;
     border: 1px solid;
     padding: 1rem 3rem;
     box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.19);
 }
 
+
+/*********************************************** .our-blogs */
+.our-blogs{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    max-width: 100%;
+    width: 1440px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.our-blogs .our-blogs-heading{
+    margin-bottom: 2.5rem;
+}
+
+.our-blogs .our-blogs-heading h2{
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0.7rem;
+}
+
+.our-blogs .our-blogs-heading p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9f9f9f;
+}
+
+.our-blogs .our-blogs-items{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-bottom: 4.75rem;
+}
+
+.our-blogs .our-blogs-items img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.our-blogs .our-blogs-items p{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.our-blogs .our-blogs-items a{
+    display: inline-block;
+     
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    border-bottom: 2px solid;
+    padding-bottom: 0.625rem;
+}
+
+.our-blogs .our-blog-link{
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+
+}
+
+.our-blogs .our-blog-link a{
+    display: inline-block;
+    padding-bottom: 1.188rem;
+    border-bottom: 2px solid;
+}
+
+
+
+/*********************************************** .our-instagram */
+.our-instagram{
+    display: flex;
+    flex-direction:column;
+    max-width: 100%;
+    width: 1440px;
+    text-align: center;
+    margin-top: 3.375rem;
+    background-image: url(../../images/template/template_images/Rectangle-17.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.our-instagram .our-instagram-text h2{
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 5.625rem;
+}
+
+.our-instagram .our-instagram-text p{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+.our-instagram .our-instagram-text a{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    background: #FAF4F4;
+    padding: 1rem 5.125rem;
+    border-radius: 50px;
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.1));
+}
