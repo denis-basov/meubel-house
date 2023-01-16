@@ -28,6 +28,11 @@ body{
     margin: 0;
 }
 
+/*
+*
+* INDEX 
+*
+*/
 
 /*********************************************** HEADER */
 .main-header{
@@ -55,6 +60,12 @@ body{
 .main-header .header-nav a{
     font-weight: 500;
     line-height: 24px;
+    border-top: 2px solid transparent;
+    transition: border 0.5s, color 0.3s;
+}
+.main-header .header-nav a:hover{
+    border-top: 2px solid;
+    color: #000;
 }
 
 .main-header .header-icons{
@@ -86,6 +97,12 @@ body{
 .banner-section .banner-text a{
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #3a3a3a;
+    transition: border 0.5s, color 0.3s;
+}
+
+.banner-section .banner-text a:hover{
+    border-bottom: 2px solid transparent;
+    color: #000;
 }
 
 
@@ -124,6 +141,12 @@ body{
     font-size: 1.3rem;
     padding-bottom: 0.3rem;
     border-bottom: 1px solid #3a3a3a;
+    transition: border 0.5s, color 0.3s;
+}
+
+.best-item .best-item-text a:hover{
+    color: #000;
+    border-bottom: 1px solid transparent;
 }
 
 
@@ -191,6 +214,12 @@ body{
     font-weight: 500;
     border-bottom: 2px solid;
     padding-bottom: 0.5rem;
+    transition: border 0.5s, color 0.3s;
+}
+
+.top-pics .top-pics-link a:hover{
+    color: #000;
+    border-bottom: 2px solid transparent;
 }
 
 /*********************************************** .new-arrivals */
@@ -234,6 +263,11 @@ body{
     border: 1px solid;
     padding: 1rem 3rem;
     box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.19);
+    transition: box-shadow 0.3s;
+}
+
+.new-arrivals .new-arrivals-text a:hover{
+    box-shadow: none;
 }
 
 
@@ -286,12 +320,17 @@ body{
 
 .our-blogs .our-blogs-items a{
     display: inline-block;
-     
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2.25rem;
     border-bottom: 2px solid;
     padding-bottom: 0.625rem;
+    transition: border 0.5s, color 0.3s;
+}
+
+.our-blogs .our-blogs-items a:hover{
+    color: #000;
+    border-bottom: 2px solid transparent;
 }
 
 .our-blog-item .our-blog-item-info{
@@ -324,6 +363,12 @@ body{
     display: inline-block;
     padding-bottom: 1.188rem;
     border-bottom: 2px solid;
+    transition: border 0.5s, color 0.3s;
+}
+
+.our-blogs .our-blog-link a:hover{
+    color: #000;
+    border-bottom: 2px solid transparent;
 }
 
 
@@ -361,11 +406,17 @@ body{
     font-size: 1.25rem;
     line-height: 1.875rem;
     background: #FAF4F4;
+    border: 2px solid #FAF4F4;
     padding: 1rem 5.125rem;
     border-radius: 50px;
     filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.1));
+    transition: all .3s;
 }
 
+.our-instagram .our-instagram-text a:hover{
+    filter: none;
+    border: 2px solid;
+}
 
 /*********************************************** footer */
 .main-footer{
@@ -411,6 +462,18 @@ body{
     color: #9f9f9f;
 }
 
+.footer-top .footer-links a,
+.footer-top .footer-help a{
+    border-top: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.footer-top .footer-links a:hover,
+.footer-top .footer-help a:hover{
+    border-top: 2px solid;
+    color: #000;
+}
+
 .footer-newsletter .newsletter input{
     font-weight: 400;
     font-size: 0.875rem;
@@ -443,4 +506,54 @@ body{
 .main-footer .footer-bottom{
     border-top: 2px solid #d9d9d9;
     padding-top: 2.188rem;
+}
+
+
+/*
+*
+* SHOP
+*
+*/
+
+/*********************************************** .main-header */
+.main-header.bg-white{
+    background-color: #fff;
+}
+
+/*********************************************** .second-banner */
+.second-banner{
+    background-image: url(../../images/template/template_images/Rectangle-1.png);
+    max-width: 100%;
+    width: 1440px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.second-banner h1{
+    margin: 0; 
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3rem;   
+}
+
+.second-banner .banner-breadcrumbs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+.second-banner .banner-breadcrumbs a{
+    font-weight: 300;
+}
+
+.second-banner .banner-breadcrumbs a:nth-child(1){
+    font-weight: 500;
 }
