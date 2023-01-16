@@ -38,6 +38,7 @@ body{
     max-width: 100%;
     width: 1440px;
     height: 10vh;
+    z-index: 1;
 }
 
 .main-header .fa-warehouse{
@@ -293,6 +294,25 @@ body{
     padding-bottom: 0.625rem;
 }
 
+.our-blog-item .our-blog-item-info{
+    margin-top: 1.188rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  0.438rem;
+}
+
+.our-blog-item .our-blog-item-info img{
+    width: 1rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+.our-blog-item .our-blog-item-info span{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
 .our-blogs .our-blog-link{
     font-weight: 500;
     font-size: 1.25rem;
@@ -311,7 +331,7 @@ body{
 /*********************************************** .our-instagram */
 .our-instagram{
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     max-width: 100%;
     width: 1440px;
     text-align: center;
@@ -344,4 +364,83 @@ body{
     padding: 1rem 5.125rem;
     border-radius: 50px;
     filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.1));
+}
+
+
+/*********************************************** footer */
+.main-footer{
+    padding: 5.813rem 6.25rem 2.375rem 6.25rem;
+    max-width: 100%;
+    width: 1440px;
+}
+
+.main-footer .footer-top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.footer-top .footer-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-top .footer-address p{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: #9f9f9f;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer-top .footer-links, 
+.footer-top .footer-help, 
+.footer-top .footer-newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.875rem;
+}
+
+.footer-top .footer-links span,
+.footer-top .footer-help span,
+.footer-top .footer-newsletter span{
+    color: #9f9f9f;
+}
+
+.footer-newsletter .newsletter input{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+}
+
+.footer-newsletter .newsletter input:focus{
+    outline: none;
+}
+
+.footer-newsletter .newsletter input[type=text]{
+    color: #9F9F9F;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+    margin-right: 0.688rem;
+}
+
+.footer-newsletter .newsletter input[type=submit]{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.35rem;
+    cursor: pointer;
+}
+
+.main-footer .footer-bottom{
+    border-top: 2px solid #d9d9d9;
+    padding-top: 2.188rem;
 }
