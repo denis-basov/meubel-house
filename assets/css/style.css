@@ -531,7 +531,7 @@ body{
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
 }
 
@@ -556,4 +556,78 @@ body{
 
 .second-banner .banner-breadcrumbs a:nth-child(1){
     font-weight: 500;
+}
+
+
+
+/*********************************************** .products-manager */
+.products-manager{
+    width: 1440px;
+    max-width: 100%;
+    background-color: #faf4f4;
+    padding: 2rem 6rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-manager .manager-nav{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex: 1 1 70%;
+}
+
+.manager-nav .filter,
+.manager-nav .view
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.manager-nav .filter span{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+.manager-nav .filter img,
+.manager-nav .view img
+{
+    cursor: pointer;
+}
+
+.manager-nav .show-count{
+    border-left: 2px solid #8b8b8b;
+    padding-left: 3rem;
+}
+
+.manager-nav .show-count p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.products-manager .sort{
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.products-manager .sort label{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+.products-manager .sort select{
+    flex-basis: 40%;
+    border: none;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
 }
