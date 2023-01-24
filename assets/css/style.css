@@ -800,10 +800,6 @@ body{
     width: 100%;
 }
 
-.single-product-info .single-product-main-properties{
-    /* background-color: #d9d9d9; */
-}
-
 .single-product-main-properties .main-title{
     font-weight: 400;
     font-size: 2.6rem;
@@ -1088,4 +1084,65 @@ body{
 .related-products .related-products-link a:hover{
     color: #000;
     border-bottom: 2px solid transparent;
+}
+
+
+/*********************************************** .my-account */
+.my-account{
+
+    max-width: 100%;
+    width: 1440px;
+    padding: 4rem 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+}
+
+.my-account .form-log-in,
+.my-account .form-register{
+    padding: 2.2rem 5rem 3.6rem 5rem;
+}
+
+.my-account h2{
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3.4rem;
+    margin: 2.25rem 0;
+}
+
+.my-account .input-text-field{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 2.25rem;
+    gap: 1.4rem;
+}
+
+.my-account .input-text-field label{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.my-account .input-text-field input{
+    border: 1px solid #9F9F9F;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.my-account .submit{
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 1rem 5rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.my-account .log-in-submit{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
