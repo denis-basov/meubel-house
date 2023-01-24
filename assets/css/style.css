@@ -1089,7 +1089,6 @@ body{
 
 /*********************************************** .my-account */
 .my-account{
-
     max-width: 100%;
     width: 1440px;
     padding: 4rem 6rem;
@@ -1145,4 +1144,119 @@ body{
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+
+/*********************************************** .cart */
+.cart{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 2rem;
+    padding: 4.5rem 6.25rem 4rem;
+    max-width: 100%;
+    width: 1440px;
+}
+
+.cart-products .cart-table-head{
+    background-color: #FFF9E5;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+}
+
+.cart-table-head .product{
+    grid-column: 2/3;
+}
+
+.cart-products .cart-table-body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.cart-table-body .product-img{
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+}
+
+.cart-table-body .product,
+.cart-table-body .price,
+.cart-table-body .subtotal{
+    padding: 0 0.5rem;
+}
+
+.cart-table-body .quantity{
+    width: 2rem;
+    padding: 0.5rem;
+    border: 1px solid #9F9F9F;
+    color: #3a3a3a;
+    border-radius: 5px;
+}
+
+.cart-table-body .delete-product{
+    cursor: pointer;
+}
+
+.cart .cart-totals{
+    background-color: #FFF9E5;
+    padding: 1rem 4.7rem 5rem;
+}
+
+.cart-totals h2{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 0 0 3.8rem;
+    text-align: center;
+}
+
+.cart-totals .subtotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.cart-totals .subtotal span:first-child,
+.cart-totals .total span:first-child{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cart-totals .subtotal span:last-child{
+    font-weight: 400;
+    color: #9F9F9F;
+    font-size: 1rem;
+}
+
+.cart-totals .total span:last-child{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #B88E2F;
+}
+
+.cart-totals .total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    margin-bottom: 3rem;
+}
+
+.cart-totals .check-out{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-totals .check-out a{
+    padding: 1rem 4rem;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 1.25rem;
 }
