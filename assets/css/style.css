@@ -1260,3 +1260,107 @@ body{
     font-weight: 400;
     font-size: 1.25rem;
 }
+
+
+/*********************************************** .contacts-container */
+.contacts-container{
+    padding: 6.25rem 12rem 4.4rem;
+    max-width: 100%;
+    width: 1440px;
+}
+
+.contacts-container .contacts-heading{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.contacts-container .contacts-heading h2{
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3.4rem;
+    margin: 0 0 0.5rem;
+}
+
+.contacts-container .contacts-heading p{
+    margin: 0 0 1rem;
+    color: #9F9F9F;
+}
+
+.contacts-container .contacts-body{
+    margin-top: 7.5rem;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    gap: 1rem;
+}
+
+.contacts-body .contacts-info{
+    padding: 3.6rem 4rem 4.5rem 3.1rem;
+}
+
+.contacts-info .contacts-address,
+.contacts-info .contacts-phone,
+.contacts-info .contacts-working-time{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.6rem;
+}
+
+.contacts-address .contacts-address-icon,
+.contacts-phone .contacts-phone-icon,
+.contacts-working-time .contacts-working-time-icon{
+    flex: 0 0 1.5rem;
+}
+
+.contacts-address .contacts-address-icon img,
+.contacts-phone .contacts-phone-icon img,
+.contacts-working-time .contacts-working-time-icon img{
+    width: 100%;
+}
+
+.contacts-address .contacts-address-text h3,
+.contacts-info .contacts-phone h3,
+.contacts-info .contacts-working-time h3{
+    margin: 0 0 0.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+.contacts-address .contacts-address-text p,
+.contacts-info .contacts-phone p,
+.contacts-info .contacts-working-time p{
+    margin: 0;
+}
+
+.contacts-body .contacts-form{
+    padding: 3.6rem 2rem 0 4.6rem;
+}
+
+.contacts-form .form-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.3rem;
+    gap: 1.3rem;
+}
+
+.contacts-form .form-field label{
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.contacts-form .form-field input[type="text"],
+.contacts-form .form-field textarea{
+    font-size: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #9F9F9F;
+    border-radius: 10px;
+}
+
+.contacts-form input[type="submit"]{
+    padding: 1rem 5rem;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    cursor: pointer;
+}
