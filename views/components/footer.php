@@ -26,7 +26,7 @@
 		</div>
 	</div>
 	<div class="footer-bottom">
-		<p>2021-<?=date('Y');?> Wood decor. All rights reverved</p>
+		<p>2021 - <?=date('Y');?> Wood decor. All rights reverved</p>
 	</div>
 </footer>
 </body>
