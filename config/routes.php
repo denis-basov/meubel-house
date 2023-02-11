@@ -1,8 +1,10 @@
 <?php
 
 return [
-  'news/([0-9]+)' => 'news/view/$1',
-  'news' => 'news/index',
+
+	'about' => 'about/index', // AboutController & actionIndex - страница "О нас"
+
+	'blog' => 'blog/index', // BlogController & actionIndex - главная страница блога
 
 	'contacts' => 'contacts/index', // ContactsController & actionIndex - страница контактов
 

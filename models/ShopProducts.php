@@ -11,4 +11,15 @@ class ShopProducts
 		return $pdo->query("SELECT * FROM shop_products ORDER BY title DESC")->fetchAll(PDO::FETCH_ASSOC);
 	}
 
+	// метод получает указанное кол-во товаров из таблицы
+	public static function getShopProducts($count){
+		$pdo = DBConnect::getConnection();
+
+		return $pdo->query("SELECT * FROM shop_products 
+																	ORDER BY price DESC 
+																	LIMIT $count ")
+							 ->fetchAll(PDO::FETCH_ASSOC);
+	}
+
+
 }

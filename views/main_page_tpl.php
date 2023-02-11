@@ -16,29 +16,16 @@
 		<p>Найдите яркий идеал на свой вкус с нашим большим выбором подвесных, напольных и настольных светильников.</p>
 	</div>
 	<div class="top-pics-items">
-		<div class="top-pics-item top-pics-item-1">
-			<img src="/template/images/template/template_images/Trenton-modular-sofa_3-1.png" alt="Trenton-modular-sofa" />
-			<p>Trenton modular sofa_3</p>
-			<span>Rs. 25,000.00</span>
-		</div>
-		<div class="top-pics-item top-pics-item-2">
-			<img src="/template/images/template/template_images/Granite-dining-table-with-dining-chair-1.png" alt="Granite-dining-table-with-dining-chair" />
-			<p>Granite dining table with dining chair</p>
-			<span>Rs. 25,000.00</span>
-		</div>
-		<div class="top-pics-item top-pics-item-3">
-			<img src="/template/images/template/template_images/Outdoor-bar-table-and-stool-1.png" alt="Outdoor-bar-table-and-stool" />
-			<p>Outdoor bar table and stool</p>
-			<span>Rs. 25,000.00</span>
-		</div>
-		<div class="top-pics-item top-pics-item-4">
-			<img src="/template/images/template/template_images/Plain-console-with-teak-mirror-1.png" alt="Plain-console-with-teak-mirror" />
-			<p>Plain console with teak mirror</p>
-			<span>Rs. 25,000.00</span>
-		</div>
+        <?php foreach ($popularShopProducts as $popularShopProduct):?>
+            <div class="top-pics-item top-pics-item-1">
+                <a href="#"><img src="<?=$popularShopProduct['image']?>" alt="<?=$popularShopProduct['title']?>" /></a>
+                <a href="#"><p><?=$popularShopProduct['title']?></p></a>
+                <a href="#"><span><?=$popularShopProduct['price']?></span></a>
+            </div>
+	    <?php endforeach;?>
 	</div>
 	<div class="top-pics-link">
-		<a href="#">В Каталог</a>
+		<a href="/catalog">В Каталог</a>
 	</div>
 </section>
 

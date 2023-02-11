@@ -2,18 +2,19 @@
 
 <section class="second-banner">
 	<img src="/template/images/template/icons/Meubel-House_Logos-05.svg" alt="logo" />
-	<h1>Contacts</h1>
+	<h1>Контакты</h1>
 	<div class="banner-breadcrumbs">
-		<a href="index.html">Home</a>
+		<a href="/">Главная</a>
 		<img src="/template/images/template/icons/breadcrumbs-separator.svg" alt="breadcrumbs-separator" />
-		<a href="contacts.html">Contacts</a>
+		<a href="/contacts">Контакты</a>
 	</div>
 </section>
 
 <section class="contacts-container">
 	<div class="contacts-heading">
-		<h2>Get In Touch With Us</h2>
-		<p>For More Information About Our Product & Services. Please Feel Free To Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
+		<h2>Свяжись с нами</h2>
+		<p>Для получения дополнительной информации о наших продуктах и услугах. Пожалуйста, не стесняйтесь, напишите
+            нам по электронной почте. Наши сотрудники всегда будут рядом, чтобы помочь вам. Не стесняйтесь!</p>
 	</div>
 	<div class="contacts-body">
 		<div class="contacts-info">
@@ -22,7 +23,7 @@
 					<img src="/template/images/template/icons/contacts-address-icon.svg" alt="contacts-address-icon" />
 				</div>
 				<div class="contacts-address-text">
-					<h3>Address</h3>
+					<h3>Адрес</h3>
 					<p>236 5th SE Avenue, New York NY10000, United States</p>
 				</div>
 			</div>
@@ -31,7 +32,7 @@
 					<img src="/template/images/template/icons/contacts-phone-icon.svg" alt="contacts-phone-icon" />
 				</div>
 				<div class="contacts-phone-text">
-					<h3>Phone</h3>
+					<h3>Телефон</h3>
 					<p>Mobile: +(84) 546-6789</p>
 					<p>Hotline: +(84) 456-6789</p>
 				</div>
@@ -41,7 +42,7 @@
 					<img src="/template/images/template/icons/contacts-clock-icon.svg" alt="contacts-clock-icon" />
 				</div>
 				<div class="contacts-working-time-text">
-					<h3>Working Time</h3>
+					<h3>Рабочее время</h3>
 					<p>Monday-Friday: 9:00 - 22:00</p>
 					<p>Saturday-Sunday: 9:00 - 21:00</p>
 				</div>
