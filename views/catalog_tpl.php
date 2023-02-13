@@ -39,21 +39,20 @@
 <section class="shop-products">
 	<div class="shop-prodicts-items">
 
-		<!-- first row -->
         <?php foreach($shopProducts as $shopProduct):?>
             <div class="shop-products-item">
                 <div class="item-image">
-                    <a href="single-product.html" class="item-image-link">
+                    <a href="/catalog/<?=$shopProduct['id']?>" class="item-image-link">
                         <img src="<?=$shopProduct['image']?>" alt="<?=$shopProduct['title']?>" />
                     </a>
                 </div>
                 <div class="item-title">
-                    <a href="single-product.html">
+                    <a href="/catalog/<?=$shopProduct['id']?>">
                         <p><?=$shopProduct['title']?></p>
                     </a>
                 </div>
                 <div class="item-price">
-                    <a href="single-product.html">
+                    <a href="/catalog/<?=$shopProduct['id']?>">
                         <span><?=$shopProduct['price']?> RUB</span>
                     </a>
                 </div>

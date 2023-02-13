@@ -18,9 +18,10 @@
 	<div class="top-pics-items">
         <?php foreach ($popularShopProducts as $popularShopProduct):?>
             <div class="top-pics-item top-pics-item-1">
-                <a href="#"><img src="<?=$popularShopProduct['image']?>" alt="<?=$popularShopProduct['title']?>" /></a>
-                <a href="#"><p><?=$popularShopProduct['title']?></p></a>
-                <a href="#"><span><?=$popularShopProduct['price']?></span></a>
+                <a href="/catalog/<?=$popularShopProduct['id']?>"><img src="<?=$popularShopProduct['image']?>"
+                                         alt="<?=$popularShopProduct['title']?>" /></a>
+                <a href="/catalog/<?=$popularShopProduct['id']?>"><p><?=$popularShopProduct['title']?></p></a>
+                <a href="/catalog/<?=$popularShopProduct['id']?>"><span><?=$popularShopProduct['price']?></span></a>
             </div>
 	    <?php endforeach;?>
 	</div>
@@ -36,7 +37,7 @@
 	<div class="new-arrivals-text">
 		<p>Новинки</p>
 		<h2>Asgaard sofa</h2>
-		<a href="">Купить сейчас</a>
+		<a href="#">Купить сейчас</a>
 	</div>
 </section>
 

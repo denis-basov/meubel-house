@@ -21,5 +21,14 @@ class ShopProducts
 							 ->fetchAll(PDO::FETCH_ASSOC);
 	}
 
+	// получение одного товара по ID
+	public static function getShopProductById($productId){
+		$pdo = DBConnect::getConnection();
+
+		return $pdo->query("SELECT * FROM shop_products 
+																	WHERE id=$productId")
+							 ->fetch(PDO::FETCH_ASSOC);
+	}
+
 
 }
